@@ -25,7 +25,7 @@ async def wish(_, m):
         animation=url,
         caption=wish,
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}")]])
+            [[InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NOBITA_MUSIC_SUPPORT")]])
     )
             
     
