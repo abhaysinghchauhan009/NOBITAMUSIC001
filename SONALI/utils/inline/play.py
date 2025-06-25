@@ -82,7 +82,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
                 text="𝖲ᴜᴘᴘᴏʀᴛ 🥀", url="https://t.me/+HtBDjrMYyIhhMmQ9",
             )
         ],
-         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+         [InlineKeyboardButton(text=_["ᴀᴅᴅ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ +"], url="http://t.me/zaaramusicbot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users+ban_user")],
     ]
     return buttons
 
