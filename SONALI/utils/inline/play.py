@@ -96,10 +96,9 @@ def stream_markup(_, videoid, chat_id):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
          ],
         
-        [ InlineKeyboardButton(text=" ᴀᴅᴅ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ + ", url=f"http://t.me/zaaramusicbot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users+ban_user")],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     
-
     return buttons
 
 
