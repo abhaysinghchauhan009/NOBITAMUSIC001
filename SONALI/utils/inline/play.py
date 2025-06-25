@@ -46,7 +46,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
     elif 20 <= umm < 30:
         bar = "——𝚴———————"
     elif 30 <= umm < 40:
-        bar = "———𝐎—————"
+        bar = "———𝐎——————"
     elif 40 <= umm < 50:
         bar = "————𝐁—————"
     elif 50 <= umm < 60:
@@ -76,7 +76,7 @@ def stream_markup_timer(_, videoid, chat_id, played, dur):
         ],
       [
             InlineKeyboardButton(
-                text="𝖮ᴡɴᴇʀ 🥀", url="https://t.me/ll_rixhkid_ll",
+                text="𝖮ᴡɴᴇʀ 🥀", url="https://ll_rixh_ll",
             ),
             InlineKeyboardButton(
                 text="𝖲ᴜᴘᴘᴏʀᴛ 🥀", url="https://t.me/+HtBDjrMYyIhhMmQ9",
@@ -98,7 +98,7 @@ def stream_markup(_, videoid, chat_id):
         
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
-    
+
     return buttons
 
 
@@ -186,9 +186,8 @@ def queue_markup(_, videoid, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [ InlineKeyboardButton(text=" ᴀᴅᴅ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ + ", url=f"http://t.me/zaaramusicbot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users+ban_user")],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
-    
 
     return buttons
 
@@ -422,7 +421,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
         [
-            [ InlineKeyboardButton(text=" ᴀᴅᴅ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ + ", url=f"http://t.me/zaaramusicbot?startgroup=s&admin=delete_messages+manage_video_chats+pin_messages+invite_users+ban_user")
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
         ],
     ]
     return buttons
