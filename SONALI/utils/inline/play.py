@@ -415,6 +415,7 @@ def telegram_markup_timer(_, chat_id, played, dur):
                 callback_data="GetTimer",
             )
         ],
+    ]
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
